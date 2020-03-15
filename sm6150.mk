@@ -14,6 +14,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Proprietary blobs
 $(call inherit-product-if-exists, vendor/samsung/sm6150-common/sm6150-common-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(COMMON_PATH)/overlay
+
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
 # Audio 
 PRODUCT_PACKAGES += \
     audio.a2dp.default
