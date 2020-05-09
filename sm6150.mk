@@ -47,6 +47,10 @@ AB_OTA_UPDATER := false
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl.samsung-sm6150
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
