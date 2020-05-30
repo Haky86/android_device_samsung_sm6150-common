@@ -4,6 +4,10 @@ lib64/com.qualcomm.qti.ant@1.0.so
 lib/libantradio.so
 lib/com.qualcomm.qti.ant@1.0.so
 
+# Hotword
+-product/priv-app/HotwordEnrollmentXGoogleExWCD9340/HotwordEnrollmentXGoogleExWCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleExWCD9340/HotwordEnrollmentOKGoogleExWCD9340.apk;PRESIGNED
+
 # NFC
 etc/nfcee_access.xml
 etc/nfc_key

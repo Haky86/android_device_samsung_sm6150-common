@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
+
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc
