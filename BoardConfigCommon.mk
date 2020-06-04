@@ -67,6 +67,7 @@ TARGET_BOARD_PLATFORM := sm6150
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
