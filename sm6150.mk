@@ -16,9 +16,12 @@ $(call inherit-product-if-exists, vendor/samsung/sm6150-common/sm6150-common-ven
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    $(COMMON_PATH)/overlay
+    $(COMMON_PATH)/overlay \
+    $(COMMON_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(COMMON_PATH)/overlay-lineage/lineage-sdk
 
 # Audio 
 PRODUCT_PACKAGES += \
