@@ -43,6 +43,13 @@ PRODUCT_PACKAGES += \
 # OTA Updater
 AB_OTA_UPDATER := false
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.sm6150
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/powerhint.json
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc

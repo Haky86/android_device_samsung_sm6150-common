@@ -1,0 +1,2 @@
+# Fingerprint
+genfscon sysfs /devices/virtual/sec/tsp    u:object_r:sysfs_sec_touchscreen:s0
