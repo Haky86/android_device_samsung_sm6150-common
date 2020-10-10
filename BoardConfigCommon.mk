@@ -100,22 +100,14 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     omr
 
 # SELinux
+include device/qcom/sepolicy/SEPolicy.mk
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/qva/private \
-    device/qcom/sepolicy/generic/private \
     device/samsung_slsi/sepolicy/common/private \
     $(COMMON_PATH)/sepolicy/private
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public \
     device/samsung_slsi/sepolicy/common/public
-
-PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/public
-
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/private
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
