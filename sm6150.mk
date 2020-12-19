@@ -21,7 +21,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(COMMON_PATH)/overlay-lineage/lineage-sdk
+    $(COMMON_PATH)/overlay-lineage/lineage-sdk \
+    $(COMMON_PATH)/overlay-lineage/packages/apps/Snap
 
 # Audio 
 PRODUCT_PACKAGES += \
@@ -31,6 +32,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
