@@ -47,6 +47,14 @@ PRODUCT_PACKAGES += \
 # OTA Updater
 AB_OTA_UPDATER := false
 
+# NFC
+PRODUCT_PACKAGES += \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag \
+    com.android.nfc_extras
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.sm6150
