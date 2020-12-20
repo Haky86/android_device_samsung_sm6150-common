@@ -4,6 +4,9 @@ lib64/com.qualcomm.qti.ant@1.0.so
 lib/libantradio.so
 lib/com.qualcomm.qti.ant@1.0.so
 
+# aptX - crosshatch-user 10 QQ3A.200805.001 6578210
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 # Hotword
 -product/priv-app/HotwordEnrollmentXGoogleExWCD9340/HotwordEnrollmentXGoogleExWCD9340.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentOKGoogleExWCD9340/HotwordEnrollmentOKGoogleExWCD9340.apk;PRESIGNED
