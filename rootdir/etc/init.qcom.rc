@@ -47,6 +47,9 @@ on post-fs-data
 
 on early-boot
     mount none /system/lib64/libperfmgr.so /vendor/lib64/libperfmgr.so bind
+    mount none /system/lib64/pixel-power-ext-V1-ndk_platform.so /vendor/lib64/pixel-power-ext-V1-ndk_platform.so bind
+    mount none /system/lib64/android.hardware.power-V1-ndk_platform.so /vendor/lib64/android.hardware.power-V1-ndk_platform.so bind
+    mount none /system/lib64/vendor.lineage.power-V1-ndk_platform.so /vendor/lib64/vendor.lineage.power-V1-ndk_platform.so bind
 
 on boot
     # Permissions for booster

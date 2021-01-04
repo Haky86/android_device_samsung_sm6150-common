@@ -266,8 +266,8 @@
             "Name": "TouchscreenEnable",
             "Path": "/sys/class/sec/tsp/input/enabled",
             "Values": [
-                "0",
-                "1"
+                "1",
+                "0"
             ],
             "ResetOnInit": true
         },
@@ -284,7 +284,6 @@
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
-                "CAMERA_STREAMING",
                 "SUSTAINED_PERFORMANCE",
                 "VR_MODE",
                 "VR_SUSTAINED_PERFORMANCE",
@@ -296,7 +295,7 @@
             "Name": "PowerHALAudioState",
             "Path": "vendor.powerhal.audio",
             "Values": [
-                "AUDIO_LOW_LATENCY",
+                "AUDIO_STREAMING_LOW_LATENCY",
                 ""
             ],
             "Type": "Property"
@@ -511,19 +510,13 @@
             "Value": "44"
         },
         {
-            "PowerHint": "CAMERA_STREAMING",
-            "Node": "PowerHALMainState",
-            "Duration": 0,
-            "Value": "CAMERA_STREAMING"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING",
+            "PowerHint": "CAMERA_STREAMING_MID",
             "Node": "CPUBigClusterMaxFreq",
             "Duration": 0,
             "Value": "2419200"
         },
         {
-            "PowerHint": "CAMERA_STREAMING",
+            "PowerHint": "CAMERA_STREAMING_MID",
             "Node": "CPUBigPlusClusterMaxFreq",
             "Duration": 0,
             "Value": "2131200"
@@ -571,19 +564,19 @@
             "Value": "44"
         },
         {
-            "PowerHint": "AUDIO_STREAMING",
+            "PowerHint": "AUDIO_LAUNCH",
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 2000,
             "Value": "44"
         },
         {
-            "PowerHint": "AUDIO_LOW_LATENCY",
+            "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
             "Node": "PowerHALAudioState",
             "Duration": 0,
-            "Value": "AUDIO_LOW_LATENCY"
+            "Value": "AUDIO_STREAMING_LOW_LATENCY"
         },
         {
-            "PowerHint": "AUDIO_LOW_LATENCY",
+            "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 0,
             "Value": "44"
@@ -649,10 +642,10 @@
             "Value": "585000000"
         },
         {
-            "PowerHint": "NOT_INTERACTIVE",
+            "PowerHint": "INTERACTIVE",
             "Node": "TouchscreenEnable",
             "Duration": 0,
-            "Value": "0"
+            "Value": "1"
         },
         {
             "PowerHint":"DOUBLE_TAP_TO_WAKE",

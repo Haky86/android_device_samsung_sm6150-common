@@ -113,7 +113,10 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Treble
 BOARD_VNDK_VERSION := current
