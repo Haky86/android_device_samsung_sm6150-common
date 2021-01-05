@@ -8,6 +8,7 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Hotword
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar
 -product/priv-app/HotwordEnrollmentXGoogleExWCD9340/HotwordEnrollmentXGoogleExWCD9340.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentOKGoogleExWCD9340/HotwordEnrollmentOKGoogleExWCD9340.apk;PRESIGNED
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.android.hotwordenrollment.common.util" file="/system_ext/framework/com.android.hotwordenrollment.common.util.jar"/>
+</permissions>
