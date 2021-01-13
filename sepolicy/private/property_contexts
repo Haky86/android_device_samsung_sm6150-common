@@ -1,0 +1,11 @@
+# Camera
+persist.camera.    u:object_r:vendor_camera_prop:s0
+
+# RIL
+persist.ril.interfaceconf.failed    u:object_r:radio_prop:s0
+
+# Sensor
+vendor.sensor.file.permission   u:object_r:vendor_sensor_prop:s0
+
+# Wifi
+vendor.wifi.dualconcurrent.interface    u:object_r:wifi_log_prop:s0

@@ -5,9 +5,10 @@
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.sensors@2\.1-service\.samsung-multihal    u:object_r:hal_sensors_default_exec:s0
 
 # Power Supply
-/sys/devices/platform/soc/890000.i2c/i2c-0(/.*)?    u:object_r:sysfs_battery_supply:s0
-/sys/devices/platform/soc/c88000.i2c/i2c-33(/.*)?    u:object_r:sysfs_battery_supply:s0
-/sys/devices/platform/soc/soc:sec-direct-charger/power_supply(/.*)?    u:object_r:sysfs_battery_supply:s0
+/sys/devices/platform/soc/890000.i2c/i2c-0(/.*)?      u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/c88000.i2c/i2c-33(/.*)?     u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:battery/power_supply(/.*)?    u:object_r:sysfs_battery:s0
+/sys/devices/platform/soc/soc:sec-direct-charger/power_supply(/.*)?    u:object_r:vendor_sysfs_battery_supply:s0
 
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?    u:object_r:vendor_configs_file:s0
