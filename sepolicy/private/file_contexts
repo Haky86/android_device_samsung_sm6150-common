@@ -1,6 +1,9 @@
 # Power-libperfmgr HAL
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power-service\.samsung-libperfmgr    u:object_r:hal_power_default_exec:s0
 
+# Sensors HAL
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.sensors@2\.1-service\.samsung-multihal    u:object_r:hal_sensors_default_exec:s0
+
 # Power Supply
 /sys/devices/platform/soc/890000.i2c/i2c-0(/.*)?    u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/soc/c88000.i2c/i2c-33(/.*)?    u:object_r:sysfs_battery_supply:s0
