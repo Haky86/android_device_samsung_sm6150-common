@@ -38,7 +38,6 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libpower \
     libutils \
-    libhidltransport \
     android.hardware.sensors@2.0 \
     android.hardware.sensors@2.0-ScopedWakelock \
     android.hardware.sensors@2.1

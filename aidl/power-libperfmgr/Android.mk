@@ -30,7 +30,6 @@ LOCAL_SHARED_LIBRARIES := \
     libbase \
     libcutils \
     liblog \
-    libhidltransport \
     libutils \
     libbinder_ndk \
     libperfmgr \
